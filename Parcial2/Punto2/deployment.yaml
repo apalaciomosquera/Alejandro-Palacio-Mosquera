@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-classifier
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: image-classifier
+  template:
+    metadata:
+      labels:
+        app: image-classifier
+    spec:
+      containers:
+      - name: image-classifier
+        image: josedavid2003707/image-classifier:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-classifier-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 5000
+  selector:
+    app: image-classifier
