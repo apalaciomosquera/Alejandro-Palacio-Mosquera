@@ -1,0 +1,60 @@
+# Visualización de Datos con Kibana
+
+## Descripción
+
+Este proyecto consiste en la creación de un entorno de análisis y visualización de datos utilizando Elastic Stack y Kibana. Su objetivo es configurar la recolección y análisis de grandes volúmenes de datos estructurados y no estructurados, empleando datasets de fuente abierta, como los de Kaggle. El resultado final es un conjunto de dashboards interactivos que permiten la toma de decisiones basada en datos.
+
+## Objetivos del proyecto
+
+- Configurar el entorno de Elastic Stack y Kibana.
+- Integrar datasets estructurados y no estructurados para análisis.
+- Diseñar dashboards interactivos para la visualización de datos y apoyo en la toma de decisiones.
+
+## Herramientas utilizadas
+
+- **Elastic Stack**: Un conjunto de herramientas que facilita el almacenamiento, búsqueda y análisis de datos.
+- **Kibana**: Plataforma de visualización de datos que permite crear dashboards interactivos.
+- **Datasets**: Datos de fuente abierta obtenidos de plataformas como Kaggle.
+
+## Requisitos previos
+
+- Sistema Operativo: Ubuntu 22.04 o cualquier otro compatible con Elastic Stack.
+- Logstash: Para la ingesta de datos en Elasticsearch desde archivos CSV u otras fuentes.
+
+## Instalación
+
+##Paso 1: Instalación de Elastic Stack
+
+Sigue las instrucciones oficiales para instalar Elasticsearch, Logstash, y Kibana en tu sistema operativo. Puedes encontrar una guía completa en el [sitio oficial de Elastic Stack](https://www.elastic.co/start).
+
+##Paso 2: Configuración de Elasticsearch
+
+1. Edita el archivo de configuración `elasticsearch.yml` y asegúrate de habilitar el acceso a través de la red.
+2. Inicia el servicio de Elasticsearch.
+
+##Paso 3: Configuración de Kibana
+
+1. Edita el archivo `kibana.yml` para que se conecte al servicio de Elasticsearch.
+2. Inicia Kibana y verifica que está funcionando accediendo a `http://localhost:5601`.
+
+### Paso 4: Ingresa de Datos con Logstash
+
+Para importar datos desde un archivo CSV:
+
+1. Crea un archivo de configuración de Logstash para especificar el origen de datos y el destino en Elasticsearch.
+2. Ejecuta Logstash con el archivo de configuración.
+
+### Paso 5: Configuración de Dashboards en Kibana
+
+1. Una vez que los datos estén en Elasticsearch, accede a Kibana para crear visualizaciones y dashboards.
+2. Explora los datos y crea gráficos interactivos para la toma de decisiones.
+
+## Uso del Proyecto
+
+- Accede a Kibana en tu navegador y selecciona el índice de datos que deseas analizar.
+- Utiliza las herramientas de visualización para crear gráficos que representen tus datos de manera clara y efectiva.
+- Configura dashboards interactivos para monitorear métricas clave y facilitar la toma de decisiones.
+
+## Enlace a la Herramienta
+
+Para más información sobre Kibana, visita la [página oficial de Kibana](https://www.elastic.co/kibana).
