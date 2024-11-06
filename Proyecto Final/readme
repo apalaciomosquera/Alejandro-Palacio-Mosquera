@@ -12,9 +12,9 @@ Objetivos del proyecto
 
 Herramientas utilizadas
 
-- **Elastic Stack**: Un conjunto de herramientas que facilita el almacenamiento, búsqueda y análisis de datos.
-- **Kibana**: Plataforma de visualización de datos que permite crear dashboards interactivos.
-- **Datasets**: Datos de fuente abierta obtenidos de plataformas como Kaggle.
+- Elastic Stack: Un conjunto de herramientas que facilita el almacenamiento, búsqueda y análisis de datos.
+- Kibana: Plataforma de visualización de datos que permite crear dashboards interactivos.
+- Datasets: Datos de fuente abierta obtenidos de plataformas como Kaggle.
 
 Requisitos previos
 
@@ -23,7 +23,7 @@ Requisitos previos
 
 Instalación
 
-##Paso 1: Instalación de Elastic Stack
+Paso 1: Instalación de Elastic Stack
 
 Sigue las instrucciones oficiales para instalar Elasticsearch, Logstash, y Kibana en tu sistema operativo. Puedes encontrar una guía completa en el [sitio oficial de Elastic Stack](https://www.elastic.co/start).
 
